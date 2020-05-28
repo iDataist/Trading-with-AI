@@ -4,7 +4,7 @@
 I implemented the momentum trading strategy, and tested if it has the potential to be profitable. For the dataset, I used the end of day from Quotemedia. I computed the signal and applied it to the dataset to produce projected returns. Finally, I performed a statistical test on the mean of the returns to check if there is alpha in the signal.
 
 ## Breakout Strategy
-I implemented the breakout strategy. For the dataset, I used the end of day from Quotemedia. I found and removed any outliers. I also tested to see if it has the potential to be profitable using a Histogram and P-Value.
+I implemented the breakout strategy. I found and removed any outliers. I also tested to see if it has the potential to be profitable using a Histogram and P-Value. For the dataset, I used the end of day from Quotemedia.
 
 ## Smart Beta and Portfolio Optimization
 I built a smart beta portfolio and compared it to a benchmark index. To find out how well the smart beta portfolio did, I calculated the tracking error against the index. I then optimized the weights by using quadratic programming. I rebalanced the portfolio with the optimized weights and calculated turn over to evaluate the performance. I used the turn over metric to find the optimal rebalancing Frequency. For the dataset, I used the end of day from Quotemedia.
