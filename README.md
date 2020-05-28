@@ -1,22 +1,22 @@
 # Trading-with-AI
 
 ## Trading with Momentum
-I implemented the momentum trading strategy, and tested if it has the potential to be profitable. For the dataset, I used the end of day from Quotemedia. I computed the signal and applied it to the dataset to produce projected returns. Finally, I performed a statistical test on the mean of the returns to check if there is alpha in the signal.
+I implemented a momentum trading strategy and tested if it has the potential to be profitable. I worked with historical data of a given stock universe and generated a trading signal based on a momentum indicator. I then computed the signal and produced projected returns. Lastly, I performed a statistical test to check if there is alpha in the signal. I used the end of day from Quotemedia as the dataset.
 
 ## Breakout Strategy
-I implemented the breakout strategy. I found and removed any outliers. I also tested to see if it has the potential to be profitable using a Histogram and P-Value. For the dataset, I used the end of day from Quotemedia.
+I implemented and evaluated a breakout signal. I run statistical tests to test for normality and to find alpha. I also found outliers and evaluated the effect that filtered outliers could have on the trading signal. I run various scenarios of the model with or without the outliers and decide if the outliers should be kept or not. I used the end of day from Quotemedia as the dataset.
 
 ## Smart Beta and Portfolio Optimization
-I built a smart beta portfolio and compared it to a benchmark index. To find out how well the smart beta portfolio did, I calculated the tracking error against the index. I then optimized the weights by using quadratic programming. I rebalanced the portfolio with the optimized weights and calculated turn over to evaluate the performance. I used the turn over metric to find the optimal rebalancing Frequency. For the dataset, I used the end of day from Quotemedia.
+I created two portfolios utilizing smart beta methodology and optimization. I evaluated the performance of the portfolios by calculating tracking errors. I also calculated the turnover of the portfolio and found the best timing to rebalance. I came up with the portfolio weights by analyzing fundamental data, and by quadratic programming. I used the end of day from Quotemedia as the dataset.
 
 ## Alpha Research and Factor Modeling
-I built a statistical risk model using PCA. I used this model to build a portfolio along with 5 alpha factors. I created these factors, then evaluated them using factor-weighted returns, quantile analysis, sharpe ratio, and turnover analysis. I optimized the portfolio using the risk model and factors using multiple optimization formulations. For the dataset, I used the end of day from Quotemedia and sector data from Sharadar.
+I researched and generated multiple alpha factors. Then I applied various techniques to evaluate the performance of the alpha factors and picked the best ones for the portfolio. I formulated an advanced portfolio optimization problem by working with constraints such as risk models, leverage, market neutrality and limits on factor exposures.
 
 ## NLP on Financial Statements
-I performed a NLP Analysis on 10-k financial statements to generate an alpha factor. For the dataset, I used the end of day from Quotemedia and Loughran-McDonald sentiment word lists.
+I applied Natural Language Processing on corporate filings, such as 10Q and 10K statements, from cleaning data and text processing, to feature extraction and modeling. I utilized bag-of-words and TF-IDF to generate company-specific sentiments. Based on the sentiments, I decided which company to invest in, and the optimal time to buy or sell.
 
 ## Sentiment Analysis with Neural Network
-I built a deep learning model to classify the sentiment of messages from StockTwits, a social network for investors and traders. I used the model to predict if any particular message is positive or negative. I then generated a signal of the public sentiment for various ticker symbols.
+I built deep neural networks to process and interpret news data. I tested different ways of embedding words into vectors. I constructed and trained LSTM networks for sentiment classification. Lastly, I run backtests and applied the models to news data for signal generation.
 
 ## Combining Signals for Enhanced Alpha
 I combined signals on a random forest for enhanced alpha. While implementing this, I also solved the problem of overlapping samples. For the dataset, I used the end of day from Quotemedia and sector data from Sharadar.
